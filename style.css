@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+    background: #F3EED9;
+    scroll-behavior: smooth;
+}
+.bar{
+position: fixed;
+background:  rgb(216, 15, 15);
+color: white;
+height: 70px;
+width: 100%;
+text-decoration: none;
+text-align: center;
+padding-top: 30px;
+}
+.bar a{
+    text-decoration: none;
+    background: none;
+    color: white;
+    padding: 20px;
+    
+}
+.bar a:hover{
+    color: black ;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#home h1{
+    justify-content: center;
+    font-size: 100px;
+    animation-name: header;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@keyframes header{
+    0%{ color: rgb(243, 116, 116);}
+    25%{ color:#e62854 ;}
+    50%{ color: rgb(216, 15, 15);}
+    75%{ color: rgb(126, 7, 7);}
+    100%{color: black;}
+}
+#about{
+    line-height: 30px;
+    padding: 20px;
+    font-size: 18px;
+}
+#about h3{
+    font-size: 20px;
+}
+#about img, h3, p{
+   position: relative;
+    animation-name: img;
+    animation-fill-mode: forwards;
+   animation-duration: 3s;
+
+}
+@keyframes img{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+#contact{
+display: flex;
+flex-direction: column;
+line-height: 1.4;
+
+}
+#contact h2 {
+padding-left: 5px;
+}
+#contact a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 0 5px;
+    color: black;
+    align-items: center;
+    font-size: 14px;
+}
+#contact a:hover{
+    color:  rgb(216, 15, 15);
+    font-size: 16px;
+}
+footer{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
